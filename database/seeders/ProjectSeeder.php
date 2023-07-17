@@ -18,7 +18,7 @@ class ProjectSeeder extends Seeder
     {
         for ($i=0; $i < 10; $i++) { 
             $post = new Project();
-            $post->title = $faker->sentence(3);
+            $post->title = $faker->words(3,true);
             $post->content = $faker->text(300);
             $post->image = $faker->imageUrl(640, 480, 'animals', true);
             
