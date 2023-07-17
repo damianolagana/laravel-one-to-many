@@ -21,6 +21,7 @@ class ProjectSeeder extends Seeder
             $post->title = $faker->sentence(3);
             $post->content = $faker->text(300);
             $post->image = $faker->imageUrl(640, 480, 'animals', true);
+            
             $post->save();
         }
     }
